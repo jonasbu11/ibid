@@ -1,0 +1,17 @@
+{
+  "name": "ibid",
+  "version": "0.0.1",
+  "description": "Told twice is a rule. A self-managing memory and rulebook for AI assistants, in Postgres, over MCP.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node scripts/scrub-check.mjs && node test/schema.mjs",
+    "build:deploy": "node deploy/build.mjs",
+    "scrub": "node scripts/scrub-check.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8"
+  }
+}
